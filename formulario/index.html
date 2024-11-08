@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios</title>
+</head>
+<body>
+    <h2>Formulario de Ejemplo</h2>
+
+    <form>
+        <!-- Input tipo texto -->
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre"><br><br>
+
+        <!-- Input tipo numérico -->
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" name="edad"><br><br>
+
+        <!-- Radio buttons -->
+        <label>Género:</label><br>
+        <input type="radio" id="masculino" name="genero" value="Masculino">
+        <label for="masculino">Masculino</label><br>
+        <input type="radio" id="femenino" name="genero" value="Femenino">
+        <label for="femenino">Femenino</label><br><br>
+
+        <!-- Checkbox -->
+        <label for="suscripcion">Suscribirse a nuestro boletín:</label>
+        <input type="checkbox" id="suscripcion" name="suscripcion"><br><br>
+
+        <!-- Select -->
+        <label for="pais">País:</label>
+        <select id="pais" name="pais">
+            <option value="Colombia">Colombia</option>
+            <option value="Argentina">Argentina</option>
+            <option value="México">México</option>
+            <option value="España">España</option>
+        </select><br><br>
+
+              <!-- Botones con eventos onclick -->
+              <button type="button" onclick="procesarFormulario()">Enviar</button>
+              <button type="button" onclick="limpiarFormulario()">Limpiar</button>
+    </form>
+
+    <h3>Resultado:</h3>
+    <div id="resultado"></div>
+    
+    <script src="formulario.js"></script>
+</body>
+</html>
